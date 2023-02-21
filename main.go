@@ -29,7 +29,7 @@ func main() {
 		panic(err)
 	}
 
-	err = consumer.Listen([]string{"add", "update", "delete"})
+	err = consumer.Listen([]string{"note-message"})
 	if err != nil {
 		log.Println(err)
 	}
